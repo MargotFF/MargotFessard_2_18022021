@@ -1,6 +1,5 @@
 body {
     font-family: 'Raleway', sans-serif;
-    font-size: 15px;
     margin: 0;
 }
 
@@ -18,7 +17,11 @@ header {
 }
 
 .signup__link {
-    font-weight: bold;
+    font-weight: 600;
     color: #0065FC;
+}
+
+.signup__link:hover {
+    font-weight: 700;
 }
 
