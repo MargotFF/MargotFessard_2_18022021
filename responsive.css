@@ -1,0 +1,32 @@
+@media all and (max-device-width: 480px)
+{
+    header {
+        width: auto;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .header--margin {
+        margin: 25px 20px 0 20px; 
+    }
+
+    nav {
+        order: 3;
+        margin-top: 22px;
+        width: 100%;
+        display: flex; 
+        
+    }
+
+    .navbar__link {
+        width: 50%;
+        text-align: center;
+        padding-bottom: 12px;
+        border-bottom: 3px solid #F2F2F2;
+    }
+
+    .navbar__link:hover {
+        border-bottom: 3px solid #0065FC;
+    }
+}
