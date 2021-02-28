@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="responsive.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ea277bf944.js" crossorigin="anonymous"></script>
     <title>Reservia | Planifiez vos vacances de rêve</title>
 </head>
 <body>
@@ -23,5 +24,43 @@
             <a class="header__link signup__link" href="#">S'inscrire</a>
         </div>
     </header>
+
+    <section>
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
+        <form class="section__searchbar" method="get" action="#">
+            <div class="searchbar__form">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="text" name="location"/>
+                <button class="searchbar__button">
+                    Rechercher
+                </button>
+            </div>
+        </form>
+        <div class="section__filters">
+            <span>Filtres</span>
+            <div class="filter__money">
+                <i class="fas fa-money-bill-wave"></i>
+                <span>Économique</span> 
+            </div>
+            <div class="filter__family">
+                <i class="fas fa-child"></i>
+                <span>Familial</span>
+            </div>
+            <div class="filter__romantic">
+                <i class="fas fa-heart"></i>
+                <span>Romantique</span>
+            </div>
+            <div class="filter__animal">
+                <i class="fas fa-dog"></i>
+                <span>Animaux autorisés</span>
+            </div>
+        </div>
+        <div class="section__info">
+            <i class="fas fa-info-circle"></i>
+            <span>Plus de 500 logements sont disponibles dans cette ville</span>
+        </div>
+    </section>
+
 </body>
 </html>
