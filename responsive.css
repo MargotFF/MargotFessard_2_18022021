@@ -1,7 +1,7 @@
 @media all and (max-device-width: 480px)
 {
     body {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     header {
@@ -21,7 +21,7 @@
 
     .header__navbar {
         order: 3;
-        margin-top: 20px;
+        margin-top: 5px;
         width: 100%; 
     }
 
@@ -36,16 +36,79 @@
         border-bottom: 2px solid #0065FC;
         padding-bottom: 12px;
     }
+
+    .section__search {
+        margin: 0 15px;
+    }
+
+    .section__search h1 {
+        font-size: 19px;
+        margin-bottom: -2px;
+    }
+
+    .section__searchbar {
+        margin-top: 32px;
+    }
+
+    .searchbar__form .fa-map-marker-alt {
+        padding: 14px 18px;
+    }
+
+    .searchbar__input {
+        left: 46px;
+        padding: 12px 50px 12px 12px;
+        font-size: 14px;
+    }
+
+    .searchbar__button {
+        left: 242px;
+        padding: 13px 14px;
+        border-radius: 12px;
+        color: white;
+        background-color: #0065FC;
+        border: none;
+    }
+
+    .searchbar__text {
+        display: none;
+    } 
+
+    .section__filters {
+        margin-top: 30px;
+    }
+
+    .filters__title {
+        margin-bottom: 14px;
+    }
+
+    .filter__box {
+        margin-right: 10px;
+        margin-bottom: 12px;
+    }
+
+    .filter__box i {
+        height: 40px;
+        width: 40px;
+        font-size: 14px;
+    }
+
+    .filter__box span {
+        padding: 0 12px 0 10px; 
+    }
+
+    .section__info {
+        margin-top: 18px;
+    }
 }
 
 @media all and (min-width: 480px)
 {
     body {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     header {
-        margin: 30px 45px 0 45px; 
+        margin: 30px 45px 35px 45px; 
         align-items: center;
     }
 
@@ -60,6 +123,71 @@
     .header__item:hover, .is--active {
         border-top: 3px solid #0065FC;
         padding-top: 44px;
+    }
+
+    .section__search {
+        margin: 0 45px;
+    }
+
+    .section__search h1 {
+        font-size: 22px;
+        margin-bottom: -10px;
+    }
+
+    .searchbar__form .fa-map-marker-alt {
+        padding: 17px 18px;
+    }
+
+    .searchbar__input {
+        left: 47px;
+        padding: 13px 79px 14px 16px;
+        font-size: 16px;
+    }
+
+    .searchbar__button {
+        left: 283px;
+        padding: 13px 17px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        font-weight: 600; 
+        color: white;
+        background-color: #0065FC;
+        border: 1px solid #0065FC; 
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+
+    .searchbar__button .fa-search {
+        display: none;
+    } 
+
+    .section__filters {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        margin-top: 24px;
+    }
+
+    .filters__title {
+        margin-right: 10px;
+    }
+
+    .filter__box {
+        margin: 6px 0 6px 24px;
+    }
+    
+    .filter__box i {
+        height: 50px;
+        width: 50px;
+        font-size: 20px;
+    }
+
+    .filter__box span {
+        padding: 0 20px 0 12px;
+    }
+
+    .section__info {
+        margin-top: 25px;
     }
 }
 

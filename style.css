@@ -31,3 +31,82 @@ header {
     font-weight: 700;
 }
 
+.searchbar__form {
+    position: relative;
+}
+
+.searchbar__form .fa-map-marker-alt {
+    background-color: #F2F2F2;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.searchbar__input {
+    position: absolute;
+    border: 1px solid #F2F2F2;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.searchbar__button {
+    position: absolute;
+}
+
+.filters__title {
+    font-weight: bold;
+}
+
+.filters__options {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter__box {
+    display: flex;
+    align-items: center;
+    border: 2px solid #e3e3e3;
+    border-radius: 30px;
+    width: fit-content;
+}
+
+.filter__box:hover {
+    transform: scale(1.1); 
+    transition: 0.3s ease;
+    background-color: #DEEBFF;
+    border-color: #DEEBFF;
+
+}
+
+.filter__box i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    margin: -2px 0 -2px -2px;
+}
+
+.filter__box span {
+   font-weight: bold;
+}
+
+.section__info {
+    display: flex;
+}
+
+.section__info .fa-info {
+    height: 18px;
+    width: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: #0065FC;
+    border: 1px solid #e3e3e3;
+    border-radius: 100%;
+}
+
+.section__info span {
+    padding-left: 10px;
+}
