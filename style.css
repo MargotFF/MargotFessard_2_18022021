@@ -7,13 +7,19 @@ header {
     display: flex;
 }
 
+.header__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.header__item:hover, .is--active {
+    color: #0065FC;
+}
+
 .header__link {
     color: black;
     text-decoration: none;
-}
-
-.navbar__link:hover {
-    color: #0065FC;
 }
 
 .signup__link {

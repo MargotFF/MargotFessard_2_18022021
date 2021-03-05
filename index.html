@@ -16,9 +16,11 @@
         <div class="header__logo header--margin">
             <img src="images/logo/Reservia.svg" alt="Logo Reservia">
         </div>  
-        <nav>
-            <a class="header__link navbar__link" href="#">Hébergements</a>
-            <a class="header__link navbar__link" href="#">Activités</a>
+        <nav class="header__navbar">
+            <ul class="header__list">
+                <li class="header__item"><a class="header__link navbar__link is--active" href="#">Hébergements</a></li>
+                <li class="header__item"><a class="header__link navbar__link" href="#">Activités</a></li>
+            </ul>
         </nav>
         <div class="header__signup header--margin"> 
             <a class="header__link signup__link" href="#">S'inscrire</a>
@@ -38,7 +40,7 @@
             </div>
         </form>
         <div class="section__filters">
-            <span>Filtres</span>
+            <div class="filters__title">Filtres</div>
             <div class="filter__money">
                 <i class="fas fa-money-bill-wave"></i>
                 <span>Économique</span> 

@@ -19,22 +19,22 @@
         margin: 20px 25px 0 15px; 
     }
 
-    nav {
+    .header__navbar {
         order: 3;
         margin-top: 20px;
-        width: 100%;
-        display: flex;  
+        width: 100%; 
     }
 
-    .navbar__link {
+    .header__item {
         width: 50%;
         text-align: center;
         padding-bottom: 12px;
         border-bottom: 2px solid #F2F2F2;
     }
 
-    .navbar__link:hover {
+    .header__item:hover, .is--active {
         border-bottom: 2px solid #0065FC;
+        padding-bottom: 12px;
     }
 }
 
@@ -45,7 +45,7 @@
     }
 
     header {
-        margin: 30px 45px 0 50px; 
+        margin: 30px 45px 0 45px; 
         align-items: center;
     }
 
@@ -57,9 +57,9 @@
         padding: 0 36px;
     }
 
-    .navbar__link:hover {
-        padding-top: 44px;
+    .header__item:hover, .is--active {
         border-top: 3px solid #0065FC;
+        padding-top: 44px;
     }
 }
 
