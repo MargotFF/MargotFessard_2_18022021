@@ -1,6 +1,6 @@
 /* MEDIA QUERY MOBILE */
 
-@media all and (max-device-width: 480px)
+@media all and (max-width: 480px)
 {
     body {
         font-size: 14px;
@@ -20,7 +20,7 @@
     }
 
     .header--margin {
-        margin: 20px 25px 0 15px; 
+        margin: 20px 18px 0 18px; 
     }
 
     .header__navbar {
@@ -61,7 +61,7 @@
     }
 
     .searchbar__input {
-        left: 46px;
+        /* width: 50%; */
         padding: 12px 50px 12px 12px;
         font-size: 14px;
     }
@@ -70,8 +70,6 @@
         left: 242px;
         padding: 13px 14px;
         border-radius: 12px;
-        color: white;
-        background-color: #0065FC;
         border: none;
     }
 
@@ -113,6 +111,10 @@
         font-size: 19px;
     }
 
+    .accomodation__list {
+        box-sizing: border-box;
+    }
+
     .accomodation__asidelist {
         margin-top: 30px;
         padding: 20px 16px; 
@@ -141,7 +143,6 @@
 
     .asidelist__image img {
         width: 108px;
-        height: 100%;
     }
 
     .accomodation__info h3 {
@@ -171,7 +172,6 @@
 
     .mainlist__image img {
         height: 100px;
-        width: 100%;
     }
 
     .mainlist__loadmore {
@@ -180,12 +180,12 @@
 
     /* SECTION ACTIVITIES */
 
-    
+
 }
 
 /* MEDIA QUERY DESKTOP */
 
-@media all and (min-width: 480px)
+@media all and (min-width: 481px)
 {
     body {
         font-size: 16px;
@@ -194,12 +194,21 @@
     /* HEADER */
 
     header {
-        margin: 30px 45px 35px 45px; 
-        align-items: center;
+        margin: 0 45px 35px 45px; 
     }
 
     .header__logo {
         flex-grow: 1;
+        padding-top: 26px;
+    }
+
+    .header__list {
+        margin: 0;
+    }
+
+    .header__item {
+        padding-top: 40px;
+        border-top: 2px solid transparent;
     }
 
     .header__link {
@@ -207,8 +216,12 @@
     }
 
     .header__item:hover, .is--active {
-        border-top: 3px solid #0065FC;
-        padding-top: 44px;
+        border-top: 2px solid #0065FC;
+    }
+
+    .header__signup {
+        padding-top: 40px;
+        border-top: 2px solid transparent;
     }
 
     /* SECTION SEARCH/FILTERS */
@@ -223,11 +236,10 @@
     }
 
     .searchbar__form .fa-map-marker-alt {
-        padding: 17px 18px;
+        padding: 16px 18px;
     }
 
     .searchbar__input {
-        left: 47px;
         padding: 13px 79px 14px 16px;
         font-size: 16px;
     }
@@ -238,8 +250,6 @@
         font-family: 'Raleway', sans-serif;
         font-size: 16px;
         font-weight: 600; 
-        color: white;
-        background-color: #0065FC;
         border: 1px solid #0065FC; 
         border-top-right-radius: 12px;
         border-bottom-right-radius: 12px;
@@ -301,6 +311,7 @@
         margin-left: 40px;
         padding-bottom: 34px;
         height: 100%;
+        width: 30%;
     }
 
     .accomodation__header h2 {
@@ -316,6 +327,10 @@
         margin-top: 10px;
     }
 
+    .accomodation__card {
+        height: 100%; 
+    } 
+
     .asidelist__cards {
         grid-template-columns: 1fr;
         grid-gap: 30px;
@@ -328,7 +343,6 @@
 
     .asidelist__image img {
         width: 120px;
-        height: 100%;
     }
 
     .accomodation__info h3 {
@@ -344,7 +358,7 @@
     } 
 
     .accomodation__mainlist {
-        width: 1100px;
+        width: 70%;
     }
 
     .mainlist__cards {
@@ -354,13 +368,12 @@
     }
 
     .mainlist__card {
-        width: 250px;
-        height: 198px; 
+        /* width: 250px;
+        height: 198px;  */
     }
 
     .mainlist__image img {
         height: 120px;
-        width: 100%;
     }
 
     .mainlist__loadmore {
@@ -372,13 +385,38 @@
 
 }
 
+@media(max-width: 1280px) {
+    .mainlist__cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 @media(max-width: 992px) {
+    .section__accomodation {
+        flex-wrap: wrap-reverse;
+    }
+
+    .accomodation__list {
+        width: 100%;
+    }
+    .accomodation__asidelist {
+        margin-left: 0;
+    }
+
+    .accomodation__mainlist {
+        background-color: white;
+    }
+
     .mainlist__cards {
         grid-template-columns: 1fr 1fr;
     }
 }
   
 @media(max-width: 768px) {
+    .header__link {
+        padding: 0 0 0 15px;
+    }
+
     .mainlist__cards {
         grid-template-columns: 1fr;
     }

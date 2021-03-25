@@ -51,6 +51,7 @@ header {
 
 .searchbar__input {
     position: absolute;
+    left: 47px;
     border: 1px solid #F2F2F2;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
@@ -58,6 +59,8 @@ header {
 
 .searchbar__button {
     position: absolute;
+    color: white;
+    background-color: #0065FC;
 }
 
 .filters__title {
@@ -153,6 +156,7 @@ header {
 }
 
 .asidelist__image img {
+    height: 100%;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -195,6 +199,7 @@ header {
 }
 
 .mainlist__image img {
+    width: 100%;
     object-fit: cover; 
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -214,4 +219,6 @@ header {
 
 /* SECTION ACTIVITIES */
 
-
+.activities__image img {
+    width: 100%;
+}
