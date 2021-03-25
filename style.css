@@ -134,18 +134,18 @@ header {
     align-items: center;
 }
 
-.accomodation__cards {
+.homepage__cards {
     display: grid;
 }
 
-.accomodation__card {
+.homepage__card {
     display: flex; 
     background-color: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border-radius: 20px;
 }
 
-.accomodation__card:hover {
+.homepage__card:hover {
     filter: brightness(90%);
     transform: scale(1.02); 
     transition: 0.3s ease;
@@ -162,7 +162,7 @@ header {
     border-bottom-left-radius: 15px;
 }
 
-.accomodation__info h3 {
+.homepagecard__info h3 {
     margin: 0;
 }
 
@@ -193,12 +193,15 @@ header {
     color: #d9d9d9;
 }
 
-.mainlist__card {
+.column__card {
     flex-direction: column;
+}
+
+.mainlist__card {
     padding: 5px 5px 0 5px;
 }
 
-.mainlist__image img {
+.columncard__image img {
     width: 100%;
     object-fit: cover; 
     border-top-left-radius: 15px;
@@ -206,7 +209,7 @@ header {
 }
 
 .mainlist__info {
-    padding: 6px 12px; 
+    padding: 6px 12px;
 }
 
 .mainlist__info p {
@@ -219,6 +222,8 @@ header {
 
 /* SECTION ACTIVITIES */
 
-.activities__image img {
-    width: 100%;
+.activities__info {
+    margin: 14px 16px;
 }
+
+
