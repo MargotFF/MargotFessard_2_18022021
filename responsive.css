@@ -57,17 +57,18 @@
     }
 
     .searchbar__form .fa-map-marker-alt {
-        padding: 14px 18px;
+        padding: 14px 14px;
     }
 
     .searchbar__input {
-        /* width: 50%; */
-        padding: 12px 50px 12px 12px;
+        padding-left: 14px;
         font-size: 14px;
+        flex-grow: 1;
+        overflow: hidden;
     }
 
     .searchbar__button {
-        left: 242px;
+        margin-left: -10px;
         padding: 13px 14px;
         border-radius: 12px;
         border: none;
@@ -255,7 +256,7 @@
     }
 
     .searchbar__button {
-        left: 283px;
+        margin-left: -1px;
         padding: 13px 17px;
         font-family: 'Raleway', sans-serif;
         font-size: 16px;
@@ -455,6 +456,12 @@
 }
 
 @media(max-width: 992px) {
+
+    /* SECTION SEARCH/FILTERS */
+
+    .section__searchbar {
+        margin-top: 32px;
+    }
 
     /* SECTION ACCOMODATION */
 
