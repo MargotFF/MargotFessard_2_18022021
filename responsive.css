@@ -183,10 +183,9 @@
     /* SECTION ACTIVITIES */
 
     .activities__cards {
-        grid-gap: 20px;
+        grid-gap: 18px;
         margin: 25px 0 45px 0;
-        /* grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr); */
+        grid-template-columns: 1fr;
     }
 
     .activities__image img {
@@ -327,7 +326,7 @@
         margin-left: 40px;
         padding-bottom: 34px;
         /* height: 100%; */
-        width: 30%;
+        /* width: 30%; */
     }
 
     .asidelist__header i {
@@ -486,9 +485,13 @@
 
     /* SECTION ACTIVITIES */
 
-    .activities__cards {
+    /* .activities__cards {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+    } */
+
+      .activities__cards {
+        grid-template-columns: 1fr 1fr;
     }
 
     .activities__card {
@@ -513,10 +516,10 @@
 
     /* SECTION ACTIVITIES */
 
-    .activities__cards {
+    /* .activities__cards {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-    }
+    } */
 
     /* FOOTER */
 
