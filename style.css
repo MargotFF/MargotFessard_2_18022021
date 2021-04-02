@@ -133,11 +133,13 @@ header {
     align-items: center;
 }
 
-.homepage__cards {
+.accomodation__cards {
     display: grid;
 }
 
 .homepage__card {
+    text-decoration: none;
+    color: black;
     display: flex; 
     background-color: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -226,8 +228,23 @@ header {
 
 /* SECTION ACTIVITIES */
 
+.activities__cards {
+    /* height: 240px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.activities__doublecard {
+    display: flex;
+    width: 23%;
+}
+
+.activities__card1, .activities__card4 {
+    width: 23%;
+}
+
 .activities__info {
-    margin: 14px 16px;
+    padding: 14px 16px;
 }
 
 /* FOOTER */
@@ -235,11 +252,9 @@ header {
 footer {
     background-color: #F2F2F2;
     display: flex;
-    padding: 20px 0;
 }
 
 .footer__section h3 {
-    margin-top: 20px;
     margin-bottom: -3px;
 }
 
@@ -251,7 +266,6 @@ footer {
 .footer__link {
     color: black;
     text-decoration: none;
-    font-size: 0.9rem;
     line-height: 1.9;
 }
 
