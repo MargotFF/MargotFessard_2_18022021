@@ -28,17 +28,21 @@ header {
     color: #0065FC;
 }
 
+.header__signup:hover {
+    transition: 0.3s ease;
+    transform: scale(1.05);
+}
+
 .signup__link {
     font-weight: 600;
     color: #0065FC;
 }
 
-.signup__link:hover {
-    opacity: 0.7;
-    transition: 0.3s ease;
-}
-
 /* SECTION SEARCH/FILTERS */
+
+.section__search h1 {
+    margin-bottom: 10px;
+}
 
 .searchbar__form {
     display: flex;
@@ -60,6 +64,12 @@ header {
 .searchbar__button {
     color: white;
     background-color: #0065FC;
+    text-decoration: none;
+}
+
+.searchbar__button:hover  {
+    opacity: 0.85;
+    transition: 0.3s ease;
 }
 
 .filters__title {
@@ -72,6 +82,8 @@ header {
 }
 
 .filter__box {
+    text-decoration: none;
+    color: black;
     display: flex;
     align-items: center;
     border: 2px solid #e3e3e3;
@@ -163,16 +175,12 @@ header {
     border-bottom-left-radius: 15px;
 }
 
-.homepagecard__info h3 {
-    margin: 0;
-}
-
 .accomodation__info {
     display: flex;
     flex-direction: column;
 }
 
-.accomodation__info p {
+.accomodation__info h3, p {
     margin: 0;
 }
 
@@ -205,7 +213,7 @@ header {
     padding: 5px 5px 0 5px;
 }
 
-.columncard__image img {
+.mainlist__image img {
     width: 100%;
     object-fit: cover; 
     border-top-left-radius: 15px;
@@ -229,22 +237,54 @@ header {
 /* SECTION ACTIVITIES */
 
 .activities__cards {
-    /* height: 240px; */
     display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.activities__wrapper {
+    width: 23%;
+}
+
+.two__activities {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
-.activities__doublecard {
-    display: flex;
-    width: 23%;
+.wrapper__activity1 {
+    margin: auto 1.5% auto 0;
 }
 
-.activities__card1, .activities__card4 {
-    width: 23%;
+.wrapper__activity2-3 {
+    margin: 0 1.5%;
+}
+  
+.wrapper__activity4 {
+    margin: auto 1.5%;
+}
+
+.wrapper__activity5-6 {
+    margin: 0 0 0 1.5%;
+}
+
+.activities__card {
+    width: 100%;
+}
+
+.activities__image {
+    width: 100%;
+    object-fit: cover; 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .activities__info {
-    padding: 14px 16px;
+    padding-left: 20px;
+    font-size: 16px;
+    /* font-size: 14px; (mobile) */
+    /* font-size: 13px; (mini) */
 }
 
 /* FOOTER */
