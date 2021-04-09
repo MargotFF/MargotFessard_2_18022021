@@ -109,11 +109,8 @@
 
     /* SECTION ACCOMODATION */
 
-    .section__homepage {
-        margin: 40px 45px;
-    }
-
     .section__accomodation {
+        margin: 40px 45px;
         display: flex;
     }
 
@@ -133,8 +130,6 @@
         order: 1;
         margin-left: 40px;
         padding-bottom: 34px;
-        /* height: 100%; */
-        /* width: 30%; */
     }
 
     .asidelist__header i {
@@ -156,7 +151,6 @@
 
     .asidelist__card {
         height: 135px; 
-        /* width: 100%; */
     }
 
     .asidelist__image img {
@@ -185,11 +179,6 @@
         grid-gap: 30px;
     }
 
-    .mainlist__card {
-        /* width: 250px;
-        height: 198px;  */
-    }
-
     .mainlist__image img {
         height: 120px;
     }
@@ -200,20 +189,12 @@
 
     /* SECTION ACTIVITIES */
 
+    .section__activities {
+        margin: 40px 45px 58px 45px;
+    }
+
     .activities__cards {
-        
-    }
-
-    .activities__doublecard {
-       
-    }
-
-    .activities__card1, .activities__card4 {
-        
-    }
-
-    .activities__image, .activities__image img {
-       
+       margin-top: 8px; 
     }
 
     /* FOOTER */
@@ -280,17 +261,10 @@
 
     /* SECTION ACTIVITIES */
 
-    /* .activities__cards {
-    
-    } */
-
-    /* .activities__cards {
-    
+    .activities__info {
+        padding: 0 16px;
+        font-size: 15px;
     }
-
-    .activities__card {
-   
-    } */
 }
 
 @media(max-width: 768px) {
@@ -307,12 +281,6 @@
         grid-template-columns: 1fr;
     }
 
-    /* SECTION ACTIVITIES */
-
-    /* .activities__cards {
-  
-    } */
-
     /* FOOTER */
 
     footer {
@@ -322,6 +290,48 @@
     .footer__section {
         margin-left: 25px;
         width: auto;
+    }
+}
+
+@media(max-width: 700px) {
+
+    /* SECTION ACTIVITIES */
+
+    .section__activities {
+        margin-top: -35px;
+    }
+
+    .activities__header {
+        padding-left: 40px;
+    }
+
+    .activities__cards {
+        width: auto;
+        padding: 40px;
+        flex-direction: column;
+        margin-top: -25px;
+        margin-bottom: -60px;
+    }
+
+    .activities__wrapper {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .activities__top {
+        margin: 0 0 20px 0;
+    }
+
+    .activities__image {
+        height: 150px;
+    }
+
+    .activities__image-medium {
+        display: none;
+    }
+
+    .activities__image-small {
+        display: block;
     }
 }
 
@@ -497,7 +507,7 @@
         margin-bottom: 26px;
     }
 
-    .column__card {
+    .mainlist__card {
         height: 170px; 
     }
 
@@ -512,20 +522,22 @@
 
     /* SECTION ACTIVITIES */
 
+    .activities__header {
+        padding-left: 0;
+    }
+
     .activities__cards {
-    
-    }
-    
-    .activities__doublecard {
-       
+        margin-top: 25px;
+        margin-bottom: 20px;
+        padding: 0;
     }
 
-    .activities__card {
-   
+    .activities__image {
+        height: 115px;
     }
 
-    .activities__image img {
-     
+    .activities__info {
+        font-size: 14px;
     }
 
     /* FOOTER */
@@ -567,4 +579,11 @@
     .accomodation__stars {
         font-size: 8px;
     }
+
+    /* SECTION ACTIVITIES  */
+
+    .activities__info {
+        font-size: 13px; 
+    }
 }
+
